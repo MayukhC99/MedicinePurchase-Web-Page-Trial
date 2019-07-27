@@ -1,0 +1,303 @@
+/* In bootstrap the horizontal screen is devided into 12 parts. */
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+
+#welcomeMSG{
+    margin-top:30%;
+}
+
+#welcome{
+    margin: 50px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: rgba(16, 62, 230, 0.103);
+	opacity: 0.4;
+	font: 700 80px 'Bitter';
+}
+.Dwriting{
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.body{
+    margin-top:10%;
+    
+}
+.cardBackground{
+    background-image: url(green.jpg);
+    background-size:100% 100%;
+}
+.main{
+    background-image: url(black.jpg);
+    background-size:100% 100%;
+    padding:10%;
+}
+
+.header{
+    display:flex;   
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+    background-color:rgb(68, 65, 65);
+    padding-bottom: 15px;
+
+}
+
+.header #genialimage img{
+    margin-top:5px;
+    height:60px;
+    width:70px;
+}
+
+.header #shoppingimage img{
+    height:30px;
+    margin-top:20px;
+}
+
+.header #icon{
+    position: relative;
+    margin-top:15px;
+    left:12%;
+    height:40px;
+}
+.header #icon button{
+    float: left;
+    height:40px;
+    width: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+.header #icon button:hover{
+    background: #0b7dda;
+}
+.header #icon button:focus{
+    outline-width: 0;
+}
+.header #search{
+    position:relative;
+    left:12%;
+    margin-top: 15px;
+    
+}
+.header #search input{
+    width:400px;
+    height:40px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.header .twoButtons{
+    position: fixed;
+    top: 2%;
+    right: 1%;
+}
+
+.rolling{
+    width: 100%;
+    height:20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.leftbox{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height:1200px;
+
+    background-image: url(blue.jpg);
+    /*background-size:100% 100%;*/
+}
+.leftbox center{
+    color:white;
+}
+.leftbox U{
+    COLOR:WHITE;
+}
+
+
+.CatagoryList ul li{
+    z-index: 1;
+    color:rgb(102, 179, 230);
+    margin: 1em 0;
+    font-family: cursive;
+    font-weight: bold;
+
+    
+}
+.CatagoryList ul { list-style-image: url("arrow.png"); color:#eee; font-size:18px; }
+.CatagoryList ul li { line-height:30px; }
+
+.CatagoryList ul li a:hover{
+    font-size: 20px;
+    color:rgb(23, 231, 40);
+}
+
+.rightbox{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height:1200px;;
+}
+
+.card{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.header input:focus {
+    outline-width: 0;
+}
+
+.navigation{
+    transform: translatex(250px);
+}
+
+/*.card{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+
+}*/
+/*.card{
+    margin:10px;
+}*/ 
+
+.footer{
+    text-align:center;
+    font-size:200%;
+    margin:2em;
+    font-family: Calibri, arial, sans-serif;
+}
+
+.to-top{
+    color:white;
+    padding-top:1.8em;
+    display:inline-block;/* or block */
+    position:relative;
+    border-color:white;
+    text-decoration:none;
+    transition:all .3s ease-out;
+}
+.to-top:before{
+    content:'▲';
+    font-size:.9em;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-.7em;
+    border:solid .13em white;
+    border-radius:10em;
+    width:1.7em;
+    height:1.7em;
+    line-height:1.3em;
+    border-color:inherit;
+    transition:transform .5s ease-in;
+}
+.to-top:hover{
+    color:pink;
+    border-color:pink;
+}
+.to-top:hover:before{
+    transform: rotate(360deg);
+}
+
+/*SSC compiled for Top Arrows*/
+
+/* Markup */
+  
+  .contain {
+    margin:0;
+    font-family: "Lucida Console", Monaco, monospace;
+    position: relative;
+    top:160px;
+   
+    /*height: 100vh;
+    padding: 20px;*/
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .contain a{
+      color: white;
+  }
+  
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .content p {
+    margin: 0 0 20px;
+  }
+  
+  /* Arrow & Hover Animation */
+  #more-arrows {
+    width: 75px;
+    height: 65px;
+  }
+  
+  .content p a:hover{
+      cursor:pointer;
+  }
+  
+  #more-arrows:hover polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+  }
+  #more-arrows:hover polygon.arrow-bottom {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+  #more-arrows:hover polygon.arrow-top {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
+  
+  
+  .content p:hover + a #more-arrows polygon{
+    fill: #FFF;
+    transition: all .2s ease-out;
+  }
+  .content p:hover + a #more-arrows polygon.arrow-bottom {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+  }
+  .content p:hover + a #more-arrows polygon.arrow-top {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
+  
+  
+  
+  
+  
+  polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+  }
+  polygon.arrow-middle {
+    opacity: 0.75;
+  }
+  polygon.arrow-top {
+    opacity: 0.5;
+  }
+
+/*******end*******/
